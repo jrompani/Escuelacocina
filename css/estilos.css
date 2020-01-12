@@ -1,0 +1,169 @@
+:root{
+    --primario: #f46669;
+    --secundario: #c7c57d;
+    --gris: #f5f5f5;
+}
+
+p{
+    font-weight: 100;
+    font-weight: 3rem;
+    font-size: 1.2rem;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-vino{
+    background-image: url('../img/principal1.jpg');
+}
+
+.bg-comida{
+    background-image: url('../img/principal2.jpg');
+}
+
+.imagen{
+    background-position: top center;
+    background-size: cover;
+}
+
+.imagen-inferior > div,
+.imagen-superior > div{
+    height: 25rem;
+}
+
+
+@media (min-width:768px){
+    .imagen-superior > div,
+    .imagen-inferior > div{
+        height: 30rem;
+    }
+}
+
+
+@media (min-width:900px){
+    .imagen-inferior .bg-comida, {
+        order: 1;
+    }
+    
+}
+
+.bg-secundario{
+    background-color: var(--secundario);
+}
+
+.bg-primario{
+    background-color: var(--primario);
+}
+
+
+
+/* NOSOTROS */
+
+
+.separador::after{
+    content:'';
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 20px auto 0 auto;
+}
+
+.nosotros .informacion{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+/* CLASES */
+
+.clases{
+   background-color:  #f5f5f5;
+}
+
+.card{
+    margin-bottom: 1rem;
+}
+
+.badge-secondary{
+    background-color: #c7c57d!important;
+}
+
+.card-meta span{
+    font-weight: 700;
+}
+
+.card-subtitle{
+    color: #f46669;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.card-body{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card-body a{
+    color: #f46669;
+}
+
+/* LICENCIATURA */
+
+.licenciatura{
+    margin-top: 4rem;
+    background-image: url(../img/chef_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.estudia-licenciatura{
+    height: 38rem;
+}
+
+.estudia-licenciatura .contenido h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.estudia-licenciatura .contenido p{
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.btn-primary{
+    background-color: #f46669!important;
+    border-color: #f46669!important;
+}
+
+.btn-primary:hover{
+    background-color: #ee4f52!important;
+    border-color: #ee4f52!important;
+}
+
+/* FOOTER */
+
+.footer{
+    border-bottom: 10px solid #f46669;
+}
+
+.copyright{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* PAGINA CLASES */
+
+.bg-clases{
+    background-image: url('../img/principal1.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
